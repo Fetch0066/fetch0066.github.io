@@ -1,0 +1,61 @@
+html {
+    background-color: #ebdda4;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.impress-enabled div#impress-toolbar {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.7;
+}
+.impress-enabled div#impress-toolbar > span {
+    margin-right: 10px;
+}
+body.impress-mouse-timeout div#impress-toolbar {
+    /*Changed to block to keep toolbar on*/
+    display: block;
+}
+
+.step {
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    padding: 40px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.column1 {
+    width: 49%;
+    float: left;
+}
+
+.column2 {
+    display: flex;
+    gap: 10px;
+    width: 49%;
+    float: right;
+    gap: 10px;
+}
+
+.column2 img {
+    width: 100%;
+}
