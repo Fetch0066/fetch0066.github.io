@@ -1,5 +1,5 @@
 html {
-    background-color: #ebdda4;
+    background: radial-gradient(white 10%, rgb(221, 221, 221) 99%);
     font-family: 'Public Sans', sans-serif;
 }
 
@@ -13,12 +13,15 @@ h2 {
 
 h3 {
     font-size: 20px;
+    
 }
 
 p, li {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
 }
+
+/*toolbar plugin*/
 
 .impress-enabled div#impress-toolbar {
     position: fixed;
@@ -29,33 +32,68 @@ p, li {
 .impress-enabled div#impress-toolbar > span {
     margin-right: 10px;
 }
+
 body.impress-mouse-timeout div#impress-toolbar {
     /*Changed to block to keep toolbar on*/
     display: block;
 }
 
+/*impress.js*/
 .step {
     position: relative;
     width: 1500px;
     height: 800px;
     padding: 40px;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    /*background-color: rgba(255, 255, 255, 0.8);*/
 }
 
-.column1 {
-    width: 49%;
-    float: left;
+/*slide specfic changes*/
+#PLATO {
+    width: 800px;
 }
 
-.column2 {
+#Kurita {
+    width: 700px;
+}
+
+#Softbank {
+    width: 600px;
+    text-align: right;
+}
+
+#Unicode {
+    text-align: right;
+    width: 800px;
+}
+
+#Emoji {
+    width: 1000px;
+    height: 1200px;
+}
+
+/*other*/
+
+#Overview { 
+    position: absolute;
     display: flex;
-    gap: 10px;
-    width: 49%;
-    float: right;
-    gap: 10px;
+    align-items: center; 
+    justify-content: center;
+    padding-bottom: 400px;
+    font-size: 100em;
 }
 
-.column2 img {
-    width: 100%;
+.overview-controls p {
+    font-size: 9em;
+    line-height: 100px;
+}
+
+.emote-transformation {
+    position: absolute; 
+    font-size: 4em;
+}
+
+.emoji-transformation {
+    position: absolute; 
+    font-size: 7em;
 }
